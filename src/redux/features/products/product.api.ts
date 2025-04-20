@@ -61,7 +61,7 @@ const productApi = baseApi.injectEndpoints({
 
     createPayment: builder.mutation({
       query: (data) => ({
-        url: "/order/create-payment",
+        url: "/orders/create-payment",
         method: "POST",
         body: data,
       }),
