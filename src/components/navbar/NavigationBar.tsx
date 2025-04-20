@@ -9,6 +9,7 @@ import {
 } from "../../redux/features/auth/AuthSlice";
 import { VerifyToken } from "../../utils/verifyToken";
 import { TUserRole } from "../../types/user";
+import logo from '../../assets/carLogo.png';
 
 const NavigationBar = () => {
   const dispatch = useAppDispatch();
@@ -70,7 +71,7 @@ const NavigationBar = () => {
 
         <div className="flex items-center gap-2">
           <img
-            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUD_NAME}/image/upload/v1744955617/car_logo_vrhvo3.png`}
+            src={logo}
             alt="Car Logo"
             className="w-12 h-10 object-contain"
           />

@@ -1,9 +1,7 @@
-"use client";
-
 import { motion } from "framer-motion";
 
 const brands = [
-  "src/assets/toyota.jpg",
+  "../../../../src/assets/toyota.jpg",
   "src/assets/audi.jpg",
   "src/assets/bmw.jpg",
   "src/assets/ford.jpg",

@@ -1,4 +1,3 @@
-import BrandScroller from "./Brands";
 import Qyery from "./Query";
 import Testimonial from "./Testimonial";
 
@@ -18,9 +17,9 @@ export default function ExtraSection() {
       <div>
         <Qyery></Qyery>
       </div>
-      <div>
+      {/* <div>
         <BrandScroller></BrandScroller>
-      </div>
+      </div> */}
     </div>
   );
 }

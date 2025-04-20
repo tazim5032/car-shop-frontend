@@ -11,7 +11,7 @@ import { toast } from "sonner";
 import { logOut, setUser } from "../features/auth/AuthSlice";
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "http://localhost:5000/api",
+    baseUrl: "https://car-shop-backend-amber.vercel.app/api",
     credentials: "include",
     prepareHeaders: (headers, {getState}) => {
         const token = (getState() as RootState).auth.token;
@@ -40,7 +40,7 @@ const baseQueryWithRefreshToken: BaseQueryFn<
         toast.error('Something is in Server...')
     }
     else if(result.error?.status === 401) {
-        const res = await fetch("http://localhost:5000/api/auth/refresh-token", {
+        const res = await fetch("https://car-shop-backend-amber.vercel.app/api/auth/refresh-token", {
             method: "POST",
             credentials: "include",
         })
